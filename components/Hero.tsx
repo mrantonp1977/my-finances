@@ -5,6 +5,7 @@ import { Button } from './ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useUser } from '@clerk/nextjs';
+import { Facebook, MailIcon, XIcon, Youtube } from 'lucide-react';
 
 function Hero() {
   const { user, isSignedIn } = useUser();
@@ -46,9 +47,19 @@ function Hero() {
         height={800}
         className="mt-5 rounded-xl border-2 border-slate-800"
       />
-      <footer className="w-full bg-slate-900 text-center py-4">
+      <div className="flex items-center space-x-2 py-4 mt-4">
+        <MailIcon className="h-6 w-6 text-amber-400" />
+        <p className="font-medium text-cyan-400">papaioannoudev@gmail.com</p>
+        <XIcon className="h-6 w-6 text-amber-400" />
+        <p className="font-medium text-cyan-400">@papdev</p>
+        <Youtube className="h-6 w-6 text-amber-400" />
+        <p className="font-medium text-cyan-400">papdev</p>
+        <Facebook className="h-6 w-6 text-amber-400" />
+        <p className="font-medium text-cyan-400">papaioannou antonis</p>
+      </div>
+      <footer className="w-full bg-slate-900 text-center py-6 mt-5">
         <p className="text-gray-400 text-md">
-          © 2024 All rights reserved
+          © 2024  All rights reserved
         </p>
       </footer>
     </section>

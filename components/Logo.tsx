@@ -8,7 +8,7 @@ function Logo() {
       <div className="flex items-start">
         <Image src="/assets/logo.png" alt="logo" width={32} height={32} />
         <p className="font-extrabold items-center text-2xl text-amber-500 ml-2">
-          My Finance
+          My Finances
         </p>
       </div>
     </Link>

@@ -23,7 +23,7 @@ function Sidebar() {
           <Link href={route.href} key={route.href}>
             <h2
               className={`flex gap-4 items-center font-semibold p-5 cursor-pointer rounded-md hover:text-white hover:bg-slate-700 mb-2 transition ${
-                pathname === route.href ? 'text-amber-400 bg-slate-700' : 'text-gray-300'
+                pathname === route.href ? 'text-cyan-500 bg-slate-700' : 'text-gray-300'
               }`}
             >
               <route.icon className={route.color}/>
